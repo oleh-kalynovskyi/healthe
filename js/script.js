@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // login form
     //open login form
         $("body").on("click", ".singup", function() {
-            $('body').append('<div class="registration"> <div id="account_closed" class="account_modal_closed"> <i class="fas fa-times account_closed_icon"></i> </div> <h3 class="registration_title"> Registration </h3> <p class="registr_text"> Create your account </p> <form action="" class="registration_form"> <input id="first_name" type="text" placeholder="First Name" required> <input id="last_name" type="text" placeholder="Last Name" required> <input id="Email" type="email" placeholder="Email" required> <input id="password" type="password" placeholder="Password" required> <input id="confirm_password" type="password" placeholder="Confirm Password" required> <button type="submit" value="Sent" id="registration_sent">Sent</button> <input type="reset" value="Cancel"> </form> </div>');
+            $('body').append('<div class="registration"> <div id="account_closed" class="account_modal_closed"> <i class="fas fa-times account_closed_icon"></i> </div> <h3 class="registration_title"> Registration </h3> <p class="registr_text"> Create your account </p> <form action="" class="registration_form"> <input id="first_name" type="text" placeholder="First Name" required> <input id="last_name" type="text" placeholder="Last Name" required> <input id="Email" type="email" placeholder="Email" required> <input id="password" minlength="8" type="password" placeholder="Password" required> <input id="confirm_password" type="password" minlength="8" placeholder="Confirm Password" required> <button type="submit" value="Send" id="registration_sent">Send</button> <input type="reset" value="Cancel"> </form> </div>');
         });
     // remove login form click button
         $("body").on("click",'#account_closed', function() {
@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
 
         // Confirm password
+        
         $("body").on("click", '#registration_sent', function() {
             let password = document.getElementById("password");
             let confirm_password = document.getElementById("confirm_password");
