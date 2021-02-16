@@ -179,7 +179,8 @@ html, body {
         display: flex;
         flex-direction: column;
         font-family: 'Poppins', sans-serif;
-        input {
+        input,
+        button {
             margin-top: 20px;
             font-family: 'Poppins', sans-serif;
 
@@ -188,8 +189,7 @@ html, body {
             padding: 10px;
             width: 300px;
             font-size: 14px;
-        }
-        input[type=submit], 
+        } 
         input[type=reset],
         button {
             border: none;

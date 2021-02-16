@@ -190,7 +190,8 @@ html, body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
 }
-.registration .registration_form input {
+.registration .registration_form input,
+.registration .registration_form button {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
   outline: none;
@@ -199,7 +200,6 @@ html, body {
   width: 300px;
   font-size: 14px;
 }
-.registration .registration_form input[type=submit],
 .registration .registration_form input[type=reset],
 .registration .registration_form button {
   border: none;
